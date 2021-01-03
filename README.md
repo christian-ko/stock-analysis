@@ -11,8 +11,9 @@ Using VBA Macros to analyze volume and return of various stock tickers. Refactor
 ### Analysis of Stock Performance from 2017 to 2018
 >Output of daily volume sum and percent return for each stock simplifies comparison of their performance.
 ![Stock Performance by Year](Resources/2017to2018Comparison.png)
->Conditional formatting provides quick visual reference for positive and negative return rates.   
+  
 ![Conditional Formatting](Resources/codeFormatting.png) 
+>Conditional formatting provides quick visual reference for positive and negative return rates.
 ### Interpretation of Data
 >In 2017, the stock for ticker SPWR acheived the highest total daily volume with a value of 782,187,000. 
 >Stock for ticker DQ, the client's current investment, had the lowest daily volume but the highest rate of return at 199.4%.
@@ -23,10 +24,14 @@ Using VBA Macros to analyze volume and return of various stock tickers. Refactor
 ### Script Execution Times
 >Refactoring the code to allow for larger data sets showed an improvement in execution time of approximately 8% for both 2017 and 2018.  
 >Script execution times were tracked via macro using the Timer function to count the seconds elapsed from the time the requested year was submitted through the input box (yearValue = InputBox("What year would you like to run analysis on?")) until the end of the script and then relayed via message box (MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)). 
-![Original Script Execution Time - 2017](Resources/2017TimeEx)
-![Original Script Execution Time - 2018](Resources/2018TimeEx)
-![Refactored Script Execution Time - 2017](Resources/VBA_Challenge_2017)
-![Refactored Script Execution Time - 2018](Resources/VBA_Challenge_2018)
+![Original Script Execution Time - 2017](Resources/2017TimeEx.png)
+>Original Script
+![Original Script Execution Time - 2018](Resources/2018TimeEx.png)
+>Original Script
+![Refactored Script Execution Time - 2017](Resources/VBA_Challenge_2017.png)
+>Refactored Script
+![Refactored Script Execution Time - 2018](Resources/VBA_Challenge_2018.png)
+>Refactored Script
 ## Summary
 
 ### Advantages and Disadvantages of Refactoring
